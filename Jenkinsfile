@@ -7,7 +7,7 @@ pipeline {
       
       steps {
         // sh "kubectl apply -f deploy.yml --kubeconfig /admin.conf"
-        kubernetesDeploy configs: 'deploy.yml' , kubeConfig: 'admin.conf'
+        kubernetesDeploy configs: 'deploy.yml' , kubeConfig: 'mykubeconfigfile'
       }
       
       
