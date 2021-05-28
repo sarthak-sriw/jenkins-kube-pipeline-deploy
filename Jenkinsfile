@@ -6,7 +6,7 @@ pipeline {
     stage("Test") {
       
       steps {
-        sh "kubectl get pods --kubeconfig /admin.conf"
+        sh "kubectl apply -f deploy.yml --kubeconfig /admin.conf"
       }
       
       
