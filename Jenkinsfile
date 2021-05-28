@@ -2,7 +2,7 @@ pipeline {
   agent any
   
   parameters{
-    booleanParam(name: 'DeployPod',defaultValue: true)
+    booleanParam(name: 'DeployPod', defaultValue: true)
   }
   
   stages {
@@ -10,7 +10,7 @@ pipeline {
     stage("Test") {
       when{
         expression{
-          param.DeployPod
+          params.DeployPod
         }
       
       }
