@@ -17,6 +17,9 @@ pipeline {
       steps {
         sh "kubectl apply -f deploy.yml --kubeconfig /admin.conf"  // always work
         // kubernetesDeploy(configs: 'deploy.yml' , kubeconfigId: 'mykubeconfigfile')  ---->> might face version issue 
+        
+        
+        mail bcc: '', body: 'Successfull', cc: '', from: '', replyTo: '', subject: 'Task execution', to: 'sarthak3398@gmail.com'
       } 
     }
   }
