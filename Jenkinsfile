@@ -28,6 +28,10 @@ pipeline {
     
     failure{
       echo "task execution unsuccessfully"
-    }  
+    } 
+    
+    always{
+      echo "task execution in progress"
+    }
   }
 }
