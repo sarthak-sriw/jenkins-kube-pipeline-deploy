@@ -6,7 +6,7 @@ pipeline {
     stage("Test") {
       
       steps {
-        echo "test....."
+        echo "kubectl get pods --kubeconfig /admin.conf"
       }
       
       
